@@ -109,7 +109,9 @@ const ponerCartasEnLasCasas = () => {
 const crearCarta = (carta) => {
   const cartaHTML = document.createElement("div");
   const imagen = document.createElement("img");
-  imagen.src = `img/${carta.estaDadaVuelta ? "dorso" : carta.img}.png`;
+  imagen.src = `Classic/${carta.estaDadaVuelta ? "dorso" : carta.img}.png`;
+  imagen.style.width = '100%';
+  imagen.style.height = '100%';
   cartaHTML.dataset.numero = carta.numero;
   cartaHTML.dataset.tipo = carta.tipo;
   cartaHTML.dataset.color = carta.color;
